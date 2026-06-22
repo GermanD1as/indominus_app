@@ -1,1 +1,0 @@
-# indominus_app
