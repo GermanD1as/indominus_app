@@ -1,0 +1,28 @@
+export const Colors = {
+  background: '#0C0C14',
+  surface: '#13131F',
+  surfaceElevated: '#1C1C2E',
+  surfaceHighlight: '#24243A',
+  primary: '#7C6FED',
+  primaryLight: '#9D92F3',
+  primaryDark: '#5A4FCC',
+  accent: '#4ECDC4',
+  accentDim: '#3AABA3',
+  text: '#F0F0FF',
+  textSecondary: '#8888AA',
+  textDim: '#555577',
+  border: '#252538',
+  borderLight: '#303050',
+  success: '#4ADE80',
+  warning: '#FBBF24',
+  error: '#F87171',
+  white: '#FFFFFF',
+  black: '#000000',
+  overlay: 'rgba(12,12,20,0.85)',
+  cardGradientStart: '#1C1C2E',
+  cardGradientEnd: '#13131F',
+  tabBarBackground: '#0E0E1A',
+  tabBarBorder: '#1E1E30',
+} as const;
+
+export type ColorKey = keyof typeof Colors;

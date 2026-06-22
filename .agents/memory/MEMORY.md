@@ -1,0 +1,1 @@
+- [AR Clothing Try-On Project](ar-clothing-tryon.md) — RN 0.70 bare workflow at repo root; Unity AR bridge stubs in ios/ and android/; all app code under src/
