@@ -218,7 +218,7 @@ android {
             keyPassword 'android'
         }
         release {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+            if (project.hasProperty('INDOMINUSAPP_UPLOAD_STORE_FILE')) {
                 storeFile file(INDOMINUSAPP_UPLOAD_STORE_FILE)
                 storePassword INDOMINUSAPP_UPLOAD_STORE_PASSWORD
                 keyAlias INDOMINUSAPP_UPLOAD_KEY_ALIAS
