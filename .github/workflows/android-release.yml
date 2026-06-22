@@ -31,6 +31,18 @@ jobs:
         run: |
           echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 --decode > android/app/my-release-key.jks
 
+      - name: Verify file exists
+        run: ls -la android/app
+
+      - name: Verify file type
+        run: file android/app/my-release-key.jks
+
+      - name: Validate keystore
+        run: |
+          keytool -list -v \
+            -keystore android/app/my-release-key.jks \
+            -storepass "${{ secrets.ANDROID_KEYSTORE_PASSWORD }}"
+            
       - name: Make gradlew executable
         run: chmod +x android/gradlew
 
